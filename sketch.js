@@ -24,7 +24,7 @@ function setup() {
 	
 	//Create the Bodies Here.
 
-	paper1=new Paper(100,200,20,20)
+	paper1=new Paper(100,200,60)
 
 box1=new Box(330,235,30,40)
 box2=new Box(360,235,30,40)
@@ -50,7 +50,7 @@ box16=new Box(590,195,30,40)
 box17=new Box(620,195,30,40)
 //top
 box18=new Box(590,155,30,40)
-rope=new Slingshot({x:200,y:500},paper1.body)
+rope=new Slingshot({x:100,y:100},paper1.body)
 ground1 = new Ground(400,450,175,10)
 ground2 = new Ground(600,300,175,10)
 	Engine.run(engine);
@@ -97,7 +97,7 @@ function mouseDragged(){
 
 }
 function mouseReleased(){
-    slingshot.fly();
+    rope.fly();
     gameState = "launched";
 }
 

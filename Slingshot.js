@@ -20,7 +20,7 @@ display(){
     
 var pointA=this.pointA
 var pointB=this.sling.bodyB.position
-strokeWeight(10)
+strokeWeight(2)
 stroke("white")
 line (pointA.x, pointA.y, pointB.x,pointB.y)
 }
